@@ -1,0 +1,33 @@
+@import "../../sass/abstracts/variables";
+@import "../../sass/abstracts/mixins";
+
+.tab {
+  &__label {
+    display: block;
+    background-color: $color-secondary-default;
+    min-width: 15rem;
+    font-size: 1.8rem;
+    color: $color-secondary-lighter;
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    height: 7.4rem;
+    cursor: pointer;
+    transition: background-color, 0.3s;
+    @include break(phone) {
+      height: auto;
+    }
+    & > [class^="label"] {
+      &:not(:last-child) {
+        margin-right: 1.2rem;
+      }
+    }
+    &:hover {
+      background-color: $color-secondary-light;
+    }
+  }
+  &__input {
+    display: none;
+  }
+  &__input:checked + &__label {
+    background-color: $color-secondary-light;
+  }
+}

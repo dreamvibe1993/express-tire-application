@@ -1,0 +1,17 @@
+@mixin break($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 26.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 52.8em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

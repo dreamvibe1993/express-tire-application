@@ -1,0 +1,12 @@
+@import "../../../sass/abstracts/variables";
+.labelSecondary {
+  display: inline-block;
+  background-color: $color-secondary-dark;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  min-height: 2.3rem;
+  border-radius: 3px;
+  & > span {
+    vertical-align: middle;
+  }
+}
