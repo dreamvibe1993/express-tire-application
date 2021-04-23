@@ -14,6 +14,8 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
+    "watch": "webpack serve --open",
+    "w_build": "webpack --config webpack.config.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,7 +40,15 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-es2015": "*",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.1.0",
     "node-sass": "^5.0.0",
-    "webpack": "^5.35.0"
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.1"
   }
 }

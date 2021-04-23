@@ -1,6 +1,5 @@
-import React from "react";
-
-import { LabelSecondary } from "../Label/Secondary";
+import React from 'react';
+import { LabelSecondary } from "../Label/Secondary/LabelSecondary";
 
 import styles from "./tab.module.scss";
 

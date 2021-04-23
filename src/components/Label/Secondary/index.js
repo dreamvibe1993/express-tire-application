@@ -1,1 +1,0 @@
-export { LabelSecondary } from './LabelSecondary'

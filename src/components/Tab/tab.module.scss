@@ -15,11 +15,6 @@
     @include break(phone) {
       height: auto;
     }
-    & > [class^="label"] {
-      &:not(:last-child) {
-        margin-right: 1.2rem;
-      }
-    }
     &:hover {
       background-color: $color-secondary-light;
     }
