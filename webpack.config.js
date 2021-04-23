@@ -26,7 +26,7 @@ module.exports = {
             })
         ]
     },
-    entry: path.resolve(__dirname, "./src/index.js"),
+    entry: "./src/index.js",
     plugins: [
         new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
         new webpack.ProvidePlugin({
